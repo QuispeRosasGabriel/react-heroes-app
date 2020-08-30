@@ -1,4 +1,6 @@
-const Marvel = (props) => {
+import React from "react";
+
+const MarvelScreen = (props) => {
   return (
     <>
       <div>MARVEL</div>
@@ -6,4 +8,4 @@ const Marvel = (props) => {
   );
 };
 
-export default Marvel;
+export default MarvelScreen;

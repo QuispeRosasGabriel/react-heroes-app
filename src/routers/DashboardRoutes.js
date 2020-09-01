@@ -7,7 +7,7 @@ import HeroScreen from "../components/heroes/HeroScreen";
 
 const DashboardRoutes = (props) => {
   return (
-    <>
+    <div className="container">
       <Navbar />
       <div>
         <Switch>
@@ -17,7 +17,7 @@ const DashboardRoutes = (props) => {
           <Redirect to="/marvel" />
         </Switch>
       </div>
-    </>
+    </div>
   );
 };
 

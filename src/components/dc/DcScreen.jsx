@@ -5,7 +5,7 @@ const DcScreen = (props) => {
   return (
     <>
       <div>Pantalla DC</div>
-      <Heroslist publisher="Dc Comics" />
+      <Heroslist publisher="DC Comics" />
     </>
   );
 };

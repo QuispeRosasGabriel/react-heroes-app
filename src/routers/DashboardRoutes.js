@@ -7,17 +7,19 @@ import HeroScreen from "../components/heroes/HeroScreen";
 
 const DashboardRoutes = (props) => {
   return (
-    <div className="container">
+    <>
       <Navbar />
-      <div>
-        <Switch>
-          <Route exact path="/marvel" component={MarvelScreen} />
-          <Route exact path="/marvel/:heroeId" component={HeroScreen} />
-          <Route exact path="/dc" component={DcScreen} />
-          <Redirect to="/marvel" />
-        </Switch>
+      <div className="container">
+        <div>
+          <Switch>
+            <Route exact path="/marvel" component={MarvelScreen} />
+            <Route exact path="/marvel/:heroeId" component={HeroScreen} />
+            <Route exact path="/dc" component={DcScreen} />
+            <Redirect to="/marvel" />
+          </Switch>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
